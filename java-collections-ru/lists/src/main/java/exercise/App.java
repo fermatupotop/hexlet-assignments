@@ -23,12 +23,20 @@ class App{
             newList.add(symbols.toLowerCase().charAt(i));
         }
 
-        for(int i = 0; i < word.length(); i++){
+
+        int tmpCount = wordLength;
+        for(int i = 0; i < wordLength; i++){
             if(newList.contains(word.toLowerCase().charAt(i))){
+                newList.set(newList.indexOf(word.toLowerCase().charAt(i)),'-');
                 count++;
             }
         }
         return count == wordLength;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(scrabble("jvayu", "java"));
     }
 
 }
