@@ -24,7 +24,6 @@ class App{
         }
 
 
-        int tmpCount = wordLength;
         for(int i = 0; i < wordLength; i++){
             if(newList.contains(word.toLowerCase().charAt(i))){
                 newList.set(newList.indexOf(word.toLowerCase().charAt(i)),'-');
@@ -34,10 +33,6 @@ class App{
         return count == wordLength;
     }
 
-    public static void main(String[] args) {
-
-        System.out.println(scrabble("jvayu", "java"));
-    }
 
 }
 //END
