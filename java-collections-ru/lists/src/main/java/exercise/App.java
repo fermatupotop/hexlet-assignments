@@ -28,13 +28,8 @@ class App{
                 count++;
             }
         }
-
-        System.out.println(newList);
         return count == wordLength;
     }
 
-    public static void main(String[] args) {
-        System.out.println(scrabble("avjafff", "JaVa"));
-    }
 }
 //END
